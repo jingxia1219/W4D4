@@ -1,3 +1,14 @@
-<form class="" action="index.html" method="post">
+<br>
+<h3>Please sign in here</h3>
+<form action="<%=session_url%>" method="post">
+  <%= auth_token %>
 
+  <label for="email">Email:</label>
+  <input id='email' type="text" name="user[email]" value="">
+  <br>
+  <label for="password">Password</label>
+  <input id='password' type="password" name="user[password]" value="">
+
+  <input type="submit" value="sign in">
 </form>
+<img src="https://d1gzo5vknddaf.cloudfront.net/uploads/post/featured_image/2/display_10AlbumsYouNeedForSummer.jpg" alt="sign in home page">

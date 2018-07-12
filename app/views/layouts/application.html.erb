@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <h1>Welcome to Jing's Music App</h1>
+
     <title>MusicApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,13 @@
   </head>
 
   <body>
+
+    <% if current_user %>
+      <h5>Hi, <%=current_user.email  %>! Welcome :)</h5>
+      <h3> <%= button_to "logout", session_url, method: :delete %> </h3>
+    <% end  %>
+    <br>
+  <h1><font face="" color="purple">Jing's awesome Music App</font></h1> 
     <%= yield %>
   </body>
 </html>

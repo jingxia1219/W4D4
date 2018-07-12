@@ -1,3 +1,16 @@
-<h2><%= link_to 'Sign up',  users_url %></h2>
+<h4>
+</head>
+sign up here
+<head>
+</h4>
+<form action="<%=users_url%>" method="post">
+ <%= auth_token %>
+  <label for="user_email">Email:</label>
+  <input id='user_email' type="text" name="user[email]" value="">
 <br>
-<h2><%= link_to 'Sign in', user_url(@user) %></h2>
+<br>
+  <label for="user_password">Password</label>
+  <input id='User_password' type="password" name="user[password]" value="">
+
+  <input type="submit" value="sign up">
+</form>
