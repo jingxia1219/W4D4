@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <body background="https://d298hcpblme28l.cloudfront.net/product-lg/d58fed5d8530633c998bf15312af0704_resize.jpg">
+      <!-- <body background="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/35226014_1681647315263809_3303063574154313728_n.jpg?_nc_cat=0&oh=fdd2157b0116ab4d08ee73e96fad11cc&oe=5BD1CC8E"> -->
 
     <title>MusicApp</title>
     <%= csrf_meta_tags %>
@@ -16,8 +18,10 @@
       <h5>Hi, <%=current_user.email  %>! Welcome :)</h5>
       <h3> <%= button_to "logout", session_url, method: :delete %> </h3>
     <% end  %>
-    <br>
-  <h1><font face="" color="purple">Jing's awesome Music App</font></h1> 
+    <header>
+
+    </header>
+  <h1><color="purple">Jing's awesome Music App</font></h1>
     <%= yield %>
   </body>
 </html>
